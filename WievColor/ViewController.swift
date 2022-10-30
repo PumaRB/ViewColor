@@ -8,6 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var redColor:Float = 0.0
+    var greenColor:Float = 0.0
+    var blueColor:Float = 0.0
+    
+    
 // - MARK: - IB Outlets
     
     @IBOutlet var viewColor: UIView!
@@ -26,7 +32,7 @@ class ViewController: UIViewController {
         setupSlider(slider: redColorSlider)
         setupSlider(slider: blueColorSlider)
         setupSlider(slider: greenColorSlider)
-//        setupLabelValue(label: redColorLabel, slider: redColorSlider)
+        viewColorize()
     }
     
     // - MARK: - IB Actions
@@ -34,17 +40,21 @@ class ViewController: UIViewController {
     
     @IBAction func redColorSliderAction() {
 formatSlider(label: redColorLabel, slider: redColorSlider)
+        redColor = redColorSlider.value
+        viewColorize()
     }
     
     @IBAction func greenColorSliderAction() {
         formatSlider(label: greenColorLabel, slider: greenColorSlider)
+        greenColor = greenColorSlider.value
+        viewColorize()
     }
     
     @IBAction func blueColorSliderAction() {
         formatSlider(label: blueColorLabel, slider: blueColorSlider)
+        blueColor = blueColorSlider.value
+        viewColorize()
     }
-    
-    
     
     // - MARK: - Private Methods
     
@@ -57,13 +67,15 @@ formatSlider(label: redColorLabel, slider: redColorSlider)
     private func formatSlider(label: UILabel, slider: UISlider){
         label.text = String(format: "%.2f", slider.value)
     }
-//    private func setupLabelValue(label: UILabel, slider: UISlider){
-////        let x = slider.value
-////        label.text = "\(slider.value)"
-//
-//    }
     
     // MARK: - Methods
-
+    
+    
+    private func viewColorize(){
+        viewColor.backgroundColor = UIColor(red: CGFloat(redColor),
+                                            green: CGFloat(greenColor),
+                                            blue: CGFloat(blueColor), alpha: 1.0)
+    }
+    
+    
 }
-

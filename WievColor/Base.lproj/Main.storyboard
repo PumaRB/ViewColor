@@ -18,21 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="bEc-zx-OEY">
-                                <rect key="frame" x="-1" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="-1" y="0.0" width="429" height="932"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clC-JO-AZd">
-                                        <rect key="frame" x="16" y="59.000000000000014" width="398" height="212.33333333333337"/>
+                                        <rect key="frame" x="16" y="58.999999999999986" width="397" height="211.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="clC-JO-AZd" secondAttribute="height" multiplier="15:8" id="Saw-6L-wuo"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-6B-ASW" userLabel="Stack View Sliders">
-                                        <rect key="frame" x="16" y="291.33333333333331" width="398" height="114"/>
+                                        <rect key="frame" x="16" y="290.66666666666669" width="397" height="114"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-Qx-mVz" userLabel="Stack View Green">
-                                                <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="397" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9f-WS-dej">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
@@ -52,7 +52,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Ji-gL-8iN">
-                                                        <rect key="frame" x="106" y="0.0" width="294" height="31"/>
+                                                        <rect key="frame" x="106" y="0.0" width="293" height="31"/>
                                                         <color key="minimumTrackTintColor" red="1" green="0.39921401020000002" blue="0.28897655119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <connections>
                                                             <action selector="redColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="M3o-gh-cdZ"/>
@@ -61,7 +61,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LyC-mh-uo4" userLabel="Stack View Green">
-                                                <rect key="frame" x="0.0" y="42" width="398" height="30"/>
+                                                <rect key="frame" x="0.0" y="42" width="397" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYK-vp-iJh">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
@@ -81,7 +81,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QeU-M6-7gU">
-                                                        <rect key="frame" x="106" y="0.0" width="294" height="31"/>
+                                                        <rect key="frame" x="106" y="0.0" width="293" height="31"/>
                                                         <color key="minimumTrackTintColor" red="0.45713133929999999" green="0.76942896839999997" blue="0.58597955459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <connections>
                                                             <action selector="blueColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="OE1-vp-J66"/>
@@ -90,7 +90,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gvc-2G-LNB" userLabel="Stack View blue">
-                                                <rect key="frame" x="0.0" y="84" width="398" height="30"/>
+                                                <rect key="frame" x="0.0" y="84" width="397" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYj-40-X2d">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
@@ -110,7 +110,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-nw-Fej">
-                                                        <rect key="frame" x="106" y="0.0" width="294" height="31"/>
+                                                        <rect key="frame" x="106" y="0.0" width="293" height="31"/>
                                                         <color key="minimumTrackTintColor" name="AccentColor"/>
                                                         <connections>
                                                             <action selector="greenColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Ddq-xh-7k9"/>
